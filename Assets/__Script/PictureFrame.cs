@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Linq;
 
 [RequireComponent(typeof(Collider))]
 public class PictureFrame : MonoBehaviour
@@ -10,15 +11,40 @@ public class PictureFrame : MonoBehaviour
     [TextArea]
     public string Desc;
 
+    public int Order;
+
     private Texture mainTexture;
+    private Bounds bounds;
+    private bool isInitBound = false;
+
+
+    static List<PictureFrame> lists = new List<PictureFrame>();
+    static PictureFrame current;
 
     private void Awake()
     {
+        lists.Add(this);
+        lists.OrderBy(x => x.Order);
+
         FindTexture();
     }
 
-    private Bounds bounds;
-    private bool isInitBound = false;
+    public static void NextPicture(bool isNext)
+    {
+        if (current == null)
+            return;
+
+        int index = lists.IndexOf(current);
+        index += (isNext) ? 1 : -1;
+
+        if (index >= lists.Count)
+            index = 0;
+        if (index < 0)
+            index = lists.Count - 1;
+
+        current.ZoomStop();
+        lists[index].ZoomStart();
+    }
 
     void FindTexture()
     {
@@ -62,6 +88,8 @@ public class PictureFrame : MonoBehaviour
     private void OnMouseDown()
     {
         isDown = true;
+
+        Debug.Log(string.Format("OnMouseDown {0}", name));
     }
 
     private void OnMouseUp()
@@ -70,35 +98,52 @@ public class PictureFrame : MonoBehaviour
             return;
         isDown = false;
 
-        Debug.Log(string.Format("OnMouseUp {0}", name));
-
-        if (onTouched != null)
+        if (Main.instance.IsLock() == true)
             return;
 
-        onTouched = StartCoroutine(OnTouched());
+        Debug.Log(string.Format("OnMouseUp {0}", name));
+
+        ZoomStart();
     }
 
-    Coroutine onTouched = null;
-    float posMultify = 2f;
-
-    IEnumerator OnTouched()
+    public void ZoomStart()
     {
-        if (UIGallery.instance.gameObject.activeSelf == true)
-        {
-            yield break;
-        }
+        if (onZooming != null)
+            ZoomStop();
 
-        yield return null;
+        onZooming = StartCoroutine(OnZooming());
+    }
 
-        UIGallery.instance.fpsCamera.enabled = false;
-        UIGallery.instance.playerMovement.enabled = false;
+    public void ZoomStop()
+    {
+        if (onZooming == null)
+            return;
 
+        StopCoroutine(onZooming);
+        onZooming = null;
+    }
+
+    Coroutine onZooming = null;
+    float posMultify = 1.2f;
+
+    IEnumerator OnZooming()
+    {
+        //if (Main.instance.uiGallery.gameObject.activeSelf == true)
+        //{
+        //    yield break;
+        //}
+
+        current = this;
+
+        Main.instance.Lock(true);
+        var uiGallery = Main.instance.uiGallery;
+        var uiJoystick = Main.instance.uiJoystick;
 
         Camera mcam = Camera.main;
-        Transform mtrans = mcam.transform;
+        Transform camtrans = mcam.transform;
 
-        Vector3 origPos = mtrans.position;
-        Quaternion origRot = mtrans.rotation;
+        Vector3 origPos = camtrans.position;
+        Quaternion origRot = camtrans.rotation;
         
         AnimationCurve curve = AnimationCurve.EaseInOut(0f, 0f, 1f, 1f);
         float elapsedTime = 0f;
@@ -109,43 +154,56 @@ public class PictureFrame : MonoBehaviour
         Vector3 targetPos = transform.position - forward * size * posMultify;
         Quaternion targetRot = Quaternion.LookRotation(forward);
 
-        Color origBgColor = UIGallery.instance.bg.color;
-        Color targetBgColor = origBgColor;
 
         // zoom in
+
+        uiJoystick.SetActive(false);
 
         while (elapsedTime < 1f)
         {
             float ratio = curve.Evaluate(elapsedTime);
 
-            mtrans.position = Vector3.Lerp(origPos, targetPos, ratio);
-            mtrans.rotation = Quaternion.Lerp(origRot, targetRot, ratio);
+            camtrans.position = Vector3.Lerp(origPos, targetPos, ratio);
+            camtrans.rotation = Quaternion.Lerp(origRot, targetRot, ratio);
 
             elapsedTime += Time.deltaTime;
             yield return null;
         }
-        mtrans.position = targetPos;
-        mtrans.rotation = targetRot;
+        camtrans.position = targetPos;
+        camtrans.rotation = targetRot;
 
-        RectTransform rt = UIGallery.instance.rawImage.rectTransform;
-        if (mainTexture.width > mainTexture.height)
+        RectTransform rt = uiGallery.rawImage.rectTransform;
+        float screenWidth = Screen.width;
+        float screenHeight = Screen.height;
+        float screenAspect = screenWidth / screenHeight;
+        float textureWidth = mainTexture.width;
+        float textureHeight = mainTexture.height;
+        float textureAspect = textureWidth / textureHeight;
+        if (screenAspect < textureAspect)
         {
-            rt.sizeDelta = new Vector2(UIGallery.instance.origImageSize.x, UIGallery.instance.origImageSize.y * mainTexture.height / mainTexture.width);
+            rt.sizeDelta = new Vector2(screenWidth, screenWidth * textureHeight / textureWidth);
         }
         else
         {
-            rt.sizeDelta = new Vector2(UIGallery.instance.origImageSize.x * mainTexture.width / mainTexture.height, UIGallery.instance.origImageSize.y);
+            rt.sizeDelta = new Vector2(screenHeight * textureWidth / textureHeight, screenHeight);
         }
+        
+        //if (mainTexture.width > mainTexture.height)
+        //{
+        //    rt.sizeDelta = new Vector2(uiGallery.origImageSize.x, uiGallery.origImageSize.y * mainTexture.height / mainTexture.width);
+        //}
+        //else
+        //{
+        //    rt.sizeDelta = new Vector2(uiGallery.origImageSize.x * mainTexture.width / mainTexture.height, uiGallery.origImageSize.y);
+        //}
 
+        uiGallery.rawImage.texture = mainTexture;
+        uiGallery.title.text = Title;
+        uiGallery.desc.text = Desc;
+        uiGallery.gameObject.SetActive(true);
 
-        UIGallery.instance.rawImage.texture = mainTexture;
-        UIGallery.instance.title.text = Title;
-        UIGallery.instance.desc.text = Desc;
-        UIGallery.instance.gameObject.SetActive(true);
-
-        while (UIGallery.instance.gameObject.activeSelf == true)
+        while (uiGallery.gameObject.activeSelf == true)
             yield return null;
-
 
         // zoom out
 
@@ -154,21 +212,21 @@ public class PictureFrame : MonoBehaviour
         {
             float ratio = curve.Evaluate(elapsedTime);
 
-            mtrans.position = Vector3.Lerp(targetPos, origPos, ratio);
-            mtrans.rotation = Quaternion.Lerp(targetRot, origRot, ratio);
-            //bgColor = Vector3.Lerp(targetPos, origPos, ratio);
+            camtrans.position = Vector3.Lerp(targetPos, origPos, ratio);
+            camtrans.rotation = Quaternion.Lerp(targetRot, origRot, ratio);
 
             elapsedTime += Time.deltaTime;
             yield return null;
         }
 
-        mtrans.position = origPos;
-        mtrans.rotation = origRot;
+        Main.instance.Lock(false);
+        uiJoystick.SetActive(true);
 
+        yield return null;
 
-        UIGallery.instance.fpsCamera.enabled = true;
-        UIGallery.instance.playerMovement.enabled = true;
+        camtrans.position = origPos;
+        camtrans.rotation = origRot;
 
-        onTouched = null;
+        onZooming = null;
     }
 }

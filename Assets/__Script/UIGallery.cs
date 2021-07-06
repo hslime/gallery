@@ -5,42 +5,30 @@ using UnityEngine.UI;
 
 public class UIGallery : MonoBehaviour
 {
-    public SFPSC_FPSCamera fpsCamera;
-    public SFPSC_PlayerMovement playerMovement;
-
     public RawImage rawImage;
     public Text title;
     public Text desc;
     public Image bg;
 
-    public Vector2 origImageSize;
-
-    static public UIGallery instance;
-
     private void Awake()
     {
-        instance = this;
-
-        origImageSize = rawImage.rectTransform.sizeDelta;
     }
 
-    void Start()
+    public void OnClickPrev()
     {
-        gameObject.SetActive(false);
+        Debug.Log("OnClickPrev()");
+        PictureFrame.NextPicture(false);
     }
 
-    void Update()
+    public void OnClickNext()
     {
-        if (Input.GetMouseButtonDown(0) == true)
-        {
-            Debug.Log("GetMouseButtonDown(0)");
-        }
-        
+        Debug.Log("OnClickNext()");
+        PictureFrame.NextPicture(true);
     }
 
-    public void OnClickBackGround()
+    public void OnClickClose()
     {
-        Debug.Log("OnClickBackGround()");
+        Debug.Log("OnClickClose()");
         gameObject.SetActive(false);
     }
 }
