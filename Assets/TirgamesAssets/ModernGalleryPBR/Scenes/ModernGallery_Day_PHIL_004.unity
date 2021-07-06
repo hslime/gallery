@@ -12337,6 +12337,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99d80ae986ff67242938edf896c5dd4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Player: {fileID: 7856907196897326866}
   uiTitle: {fileID: 135361841359508970}
   uiGallery: {fileID: 135361841359508969}
   uiJoystick: {fileID: 725954722}
@@ -16540,37 +16541,37 @@ PrefabInstance:
     - target: {fileID: 1221281112827078661, guid: bd6458ffa6a33f04a904f26bd156eef9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.53
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1221281112827078661, guid: bd6458ffa6a33f04a904f26bd156eef9,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.27
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1221281112827078661, guid: bd6458ffa6a33f04a904f26bd156eef9,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.993
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1221281112827078661, guid: bd6458ffa6a33f04a904f26bd156eef9,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7160837
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1221281112827078661, guid: bd6458ffa6a33f04a904f26bd156eef9,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1221281112827078661, guid: bd6458ffa6a33f04a904f26bd156eef9,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.69801444
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1221281112827078661, guid: bd6458ffa6a33f04a904f26bd156eef9,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1221281112827078661, guid: bd6458ffa6a33f04a904f26bd156eef9,
         type: 3}
@@ -16580,7 +16581,7 @@ PrefabInstance:
     - target: {fileID: 1221281112827078661, guid: bd6458ffa6a33f04a904f26bd156eef9,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -88.536
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1221281112827078661, guid: bd6458ffa6a33f04a904f26bd156eef9,
         type: 3}
@@ -23715,7 +23716,7 @@ MonoBehaviour:
   joystick2: {fileID: 771840256}
   speed: 5
   m_Camera: {fileID: 1420864576}
-  rotateRange: 120
+  rotateRange: 60
   viewRange: 60
 --- !u!143 &7856907196897326868
 CharacterController:

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Linq;
+using System.Collections.Generic;
+using UnityEditor;
 
 [RequireComponent(typeof(Collider))]
 public class PictureFrame : MonoBehaviour
@@ -139,12 +141,11 @@ public class PictureFrame : MonoBehaviour
         var uiGallery = Main.instance.uiGallery;
         var uiJoystick = Main.instance.uiJoystick;
 
-        Camera mcam = Camera.main;
-        Transform camtrans = mcam.transform;
+        var playerObj = Main.instance.Player;
+        var playerTrans = playerObj.transform;
+        Vector3 origPos = playerTrans.position;
+        Quaternion origRot = playerTrans.rotation;
 
-        Vector3 origPos = camtrans.position;
-        Quaternion origRot = camtrans.rotation;
-        
         AnimationCurve curve = AnimationCurve.EaseInOut(0f, 0f, 1f, 1f);
         float elapsedTime = 0f;
 
@@ -163,14 +164,14 @@ public class PictureFrame : MonoBehaviour
         {
             float ratio = curve.Evaluate(elapsedTime);
 
-            camtrans.position = Vector3.Lerp(origPos, targetPos, ratio);
-            camtrans.rotation = Quaternion.Lerp(origRot, targetRot, ratio);
+            playerTrans.position = Vector3.Lerp(origPos, targetPos, ratio);
+            playerTrans.rotation = Quaternion.Lerp(origRot, targetRot, ratio);
 
             elapsedTime += Time.deltaTime;
             yield return null;
         }
-        camtrans.position = targetPos;
-        camtrans.rotation = targetRot;
+        playerTrans.position = targetPos;
+        playerTrans.rotation = targetRot;
 
         RectTransform rt = uiGallery.rawImage.rectTransform;
         float screenWidth = Screen.width;
@@ -187,15 +188,6 @@ public class PictureFrame : MonoBehaviour
         {
             rt.sizeDelta = new Vector2(screenHeight * textureWidth / textureHeight, screenHeight);
         }
-        
-        //if (mainTexture.width > mainTexture.height)
-        //{
-        //    rt.sizeDelta = new Vector2(uiGallery.origImageSize.x, uiGallery.origImageSize.y * mainTexture.height / mainTexture.width);
-        //}
-        //else
-        //{
-        //    rt.sizeDelta = new Vector2(uiGallery.origImageSize.x * mainTexture.width / mainTexture.height, uiGallery.origImageSize.y);
-        //}
 
         uiGallery.rawImage.texture = mainTexture;
         uiGallery.title.text = Title;
@@ -212,8 +204,8 @@ public class PictureFrame : MonoBehaviour
         {
             float ratio = curve.Evaluate(elapsedTime);
 
-            camtrans.position = Vector3.Lerp(targetPos, origPos, ratio);
-            camtrans.rotation = Quaternion.Lerp(targetRot, origRot, ratio);
+            playerTrans.position = Vector3.Lerp(targetPos, origPos, ratio);
+            playerTrans.rotation = Quaternion.Lerp(targetRot, origRot, ratio);
 
             elapsedTime += Time.deltaTime;
             yield return null;
@@ -224,9 +216,41 @@ public class PictureFrame : MonoBehaviour
 
         yield return null;
 
-        camtrans.position = origPos;
-        camtrans.rotation = origRot;
+        playerTrans.position = origPos;
+        playerTrans.rotation = origRot;
 
         onZooming = null;
     }
+
+#if UNITY_EDITOR
+
+    static int frameCount = 0;
+    //static HashSet<int> orders = new HashSet<int>();
+    static Dictionary<int, int> orders = new Dictionary<int, int>();
+
+    private void OnDrawGizmos()
+    {
+        if (frameCount != Time.frameCount)
+        {
+            orders.Clear();
+
+            HashSet<int> cmp = new HashSet<int>();
+            PictureFrame[] frames = GameObject.FindObjectsOfType<PictureFrame>();
+
+            for (int i = 0; i < frames.Length; ++i)
+            {
+                if (orders.ContainsKey(frames[i].Order) == true)
+                    orders[frames[i].Order]++;
+                else
+                    orders.Add(frames[i].Order, 0);
+            }
+
+            frameCount = Time.frameCount;
+        }
+
+        GUIStyle style = new GUIStyle();
+        style.normal.textColor = (orders[Order] <= 1) ? Color.green : Color.red;
+        Handles.Label(transform.position, $"{Title} : {Order}", style);
+    }
+#endif
 }

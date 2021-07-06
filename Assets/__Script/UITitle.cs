@@ -83,6 +83,8 @@ public class UITitle : MonoBehaviour
         gameObject.SetActive(false);
         Main.instance.Lock(false);
 
+        Main.instance.uiJoystick.SetActive(true);
+
         onDisappear = null;
 
         Debug.Log(string.Format("OnDisappear() end {0}", Time.time));

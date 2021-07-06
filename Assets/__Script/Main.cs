@@ -7,6 +7,8 @@ public class Main : MonoBehaviour
 {
     static public Main instance;
 
+    public GameObject Player;
+
     public UITitle uiTitle;
     public UIGallery uiGallery;
     public GameObject uiJoystick;
@@ -20,6 +22,7 @@ public class Main : MonoBehaviour
 
         uiTitle.gameObject.SetActive(true);
         uiGallery.gameObject.SetActive(false);
+        uiJoystick.SetActive(false);
     }
 
     public bool IsLock()
