@@ -36,6 +36,9 @@
             {
                 if (v.magnitude != 0)
                 {
+                    ry = transform.localEulerAngles.y;
+                    rx = m_Camera.transform.localEulerAngles.y;
+
                     float rotationy = ry + v.x * rotateRange;
                     float rotationx = Mathf.Clamp(rx + v.y * viewRange, -45, 60);
                     m_Camera.transform.localEulerAngles = new Vector3(-rotationx, 0, 0);

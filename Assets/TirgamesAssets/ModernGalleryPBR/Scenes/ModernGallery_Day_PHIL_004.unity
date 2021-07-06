@@ -23716,7 +23716,7 @@ MonoBehaviour:
   joystick2: {fileID: 771840256}
   speed: 5
   m_Camera: {fileID: 1420864576}
-  rotateRange: 60
+  rotateRange: 1
   viewRange: 60
 --- !u!143 &7856907196897326868
 CharacterController:
