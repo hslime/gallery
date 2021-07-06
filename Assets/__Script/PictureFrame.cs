@@ -242,7 +242,7 @@ public class PictureFrame : MonoBehaviour
                 if (orders.ContainsKey(frames[i].Order) == true)
                     orders[frames[i].Order]++;
                 else
-                    orders.Add(frames[i].Order, 0);
+                    orders.Add(frames[i].Order, 1);
             }
 
             frameCount = Time.frameCount;
