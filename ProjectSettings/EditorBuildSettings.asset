@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/TirgamesAssets/ModernGalleryPBR/Scenes/ModernGallery_Day_PHIL_004.unity
+    guid: ea899ea8ce5d9674282ead35f4ca0141
   m_configObjects: {}
