@@ -45,7 +45,7 @@ public class PictureFrame : MonoBehaviour
             index = lists.Count - 1;
 
         current.ZoomStop();
-        lists[index].ZoomStart();
+        lists[index].ZoomStart(true);
     }
 
     void FindTexture()
@@ -105,15 +105,15 @@ public class PictureFrame : MonoBehaviour
 
         Debug.Log(string.Format("OnMouseUp {0}", name));
 
-        ZoomStart();
+        ZoomStart(false);
     }
 
-    public void ZoomStart()
+    public void ZoomStart(bool isImmediate)
     {
         if (onZooming != null)
             ZoomStop();
 
-        onZooming = StartCoroutine(OnZooming());
+        onZooming = StartCoroutine(OnZooming(isImmediate));
     }
 
     public void ZoomStop()
@@ -128,7 +128,7 @@ public class PictureFrame : MonoBehaviour
     Coroutine onZooming = null;
     float posMultify = 1.2f;
 
-    IEnumerator OnZooming()
+    IEnumerator OnZooming(bool isImmediate)
     {
         //if (Main.instance.uiGallery.gameObject.activeSelf == true)
         //{
@@ -160,16 +160,20 @@ public class PictureFrame : MonoBehaviour
 
         uiJoystick.SetActive(false);
 
-        while (elapsedTime < 1f)
+        if (isImmediate == false)
         {
-            float ratio = curve.Evaluate(elapsedTime);
+            while (elapsedTime < 1f)
+            {
+                float ratio = curve.Evaluate(elapsedTime);
 
-            playerTrans.position = Vector3.Lerp(origPos, targetPos, ratio);
-            playerTrans.rotation = Quaternion.Lerp(origRot, targetRot, ratio);
+                playerTrans.position = Vector3.Lerp(origPos, targetPos, ratio);
+                playerTrans.rotation = Quaternion.Lerp(origRot, targetRot, ratio);
 
-            elapsedTime += Time.deltaTime;
-            yield return null;
+                elapsedTime += Time.deltaTime;
+                yield return null;
+            }
         }
+        
         playerTrans.position = targetPos;
         playerTrans.rotation = targetRot;
 
@@ -225,7 +229,6 @@ public class PictureFrame : MonoBehaviour
 #if UNITY_EDITOR
 
     static int frameCount = 0;
-    //static HashSet<int> orders = new HashSet<int>();
     static Dictionary<int, int> orders = new Dictionary<int, int>();
 
     private void OnDrawGizmos()
@@ -234,9 +237,7 @@ public class PictureFrame : MonoBehaviour
         {
             orders.Clear();
 
-            HashSet<int> cmp = new HashSet<int>();
             PictureFrame[] frames = GameObject.FindObjectsOfType<PictureFrame>();
-
             for (int i = 0; i < frames.Length; ++i)
             {
                 if (orders.ContainsKey(frames[i].Order) == true)
@@ -248,9 +249,16 @@ public class PictureFrame : MonoBehaviour
             frameCount = Time.frameCount;
         }
 
-        GUIStyle style = new GUIStyle();
-        style.normal.textColor = (orders[Order] <= 1) ? Color.green : Color.red;
-        Handles.Label(transform.position, $"{Title} : {Order}", style);
+        if (orders.ContainsKey(Order) == true)
+        {
+            GUIStyle style = new GUIStyle();
+            style.normal.textColor = (orders[Order] <= 1) ? Color.green : Color.red;
+            Handles.Label(transform.position, $"{Title} : {Order}", style);
+        }
+        else
+        {
+            Handles.Label(transform.position, $"{Title} : {Order}");
+        }
     }
 #endif
 }
