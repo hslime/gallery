@@ -123,10 +123,31 @@ public class PictureFrame : MonoBehaviour
 
         StopCoroutine(onZooming);
         onZooming = null;
+
+        var playerObj = Main.instance.Player;
+        var playerTrans = playerObj.transform;
+
+        Vector3 standingPos;
+        Quaternion standingRot;
+        GetPositionAndRotation(false, out standingPos, out standingRot);
+
+        playerTrans.position = standingPos;
+        playerTrans.rotation = standingRot;
     }
 
     Coroutine onZooming = null;
-    float posMultify = 1.2f;
+
+    void GetPositionAndRotation(bool isView, out Vector3 pos, out Quaternion rot)
+    {
+        float size = Mathf.Max(Mathf.Max(bounds.size.x, bounds.size.y), bounds.size.z);
+        Vector3 forward = transform.up;
+        float multifly = (isView == true) ? 0.9f : 1.4f;
+        pos = transform.position - forward * size * multifly;
+        if (isView == false)
+            pos.y = Main.instance.DefaultPlayerHeight;
+
+        rot = Quaternion.LookRotation(forward);
+    }
 
     IEnumerator OnZooming(bool isImmediate)
     {
@@ -149,12 +170,14 @@ public class PictureFrame : MonoBehaviour
         AnimationCurve curve = AnimationCurve.EaseInOut(0f, 0f, 1f, 1f);
         float elapsedTime = 0f;
 
-        float size = Mathf.Max(Mathf.Max(bounds.size.x, bounds.size.y), bounds.size.z);
+        Vector3 targetPos;
+        Quaternion targetRot;
+        GetPositionAndRotation(true, out targetPos, out targetRot);
 
-        Vector3 forward = transform.up;
-        Vector3 targetPos = transform.position - forward * size * posMultify;
-        Quaternion targetRot = Quaternion.LookRotation(forward);
-
+        Camera cam = Camera.main;
+        Transform camTrans = cam.transform;
+        Quaternion camOrigRot = camTrans.localRotation;
+        Quaternion camTargetRot = Quaternion.identity;
 
         // zoom in
 
@@ -168,6 +191,7 @@ public class PictureFrame : MonoBehaviour
 
                 playerTrans.position = Vector3.Lerp(origPos, targetPos, ratio);
                 playerTrans.rotation = Quaternion.Lerp(origRot, targetRot, ratio);
+                camTrans.localRotation = Quaternion.Lerp(camOrigRot, camTargetRot, ratio);
 
                 elapsedTime += Time.deltaTime;
                 yield return null;
@@ -176,6 +200,7 @@ public class PictureFrame : MonoBehaviour
         
         playerTrans.position = targetPos;
         playerTrans.rotation = targetRot;
+        camTrans.localRotation = camTargetRot;
 
         RectTransform rt = uiGallery.rawImage.rectTransform;
         float screenWidth = 1280f;
@@ -203,13 +228,17 @@ public class PictureFrame : MonoBehaviour
 
         // zoom out
 
+        Vector3 standingPos;
+        Quaternion standingRot;
+        GetPositionAndRotation(false, out standingPos, out standingRot);
+
         elapsedTime = 0f;
         while (elapsedTime < 1f)
         {
             float ratio = curve.Evaluate(elapsedTime);
 
-            playerTrans.position = Vector3.Lerp(targetPos, origPos, ratio);
-            playerTrans.rotation = Quaternion.Lerp(targetRot, origRot, ratio);
+            playerTrans.position = Vector3.Lerp(targetPos, standingPos, ratio);
+            playerTrans.rotation = Quaternion.Lerp(targetRot, standingRot, ratio);
 
             elapsedTime += Time.deltaTime;
             yield return null;
@@ -220,8 +249,8 @@ public class PictureFrame : MonoBehaviour
 
         yield return null;
 
-        playerTrans.position = origPos;
-        playerTrans.rotation = origRot;
+        playerTrans.position = standingPos;
+        playerTrans.rotation = standingRot;
 
         onZooming = null;
     }
