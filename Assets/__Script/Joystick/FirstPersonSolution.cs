@@ -10,8 +10,8 @@
         CharacterController controller;
 
         [SerializeField] Camera m_Camera;
-        public float rotateRange = 120;
-        public float viewRange = 60F;
+        public float rotateRange = 2f;
+        public float viewRange = 2f;
         float ry = 0, rx = 0;
 
         void Start()
@@ -27,21 +27,30 @@
                 }
             });
 
-            joystick2.OnPointerUp.AddListener(v =>
-            {
-                ry = transform.localEulerAngles.y;
-                rx = m_Camera.transform.localEulerAngles.y;
-            });
+            // joystick2.OnPointerUp.AddListener(v =>
+            // {
+            //     ry = transform.localEulerAngles.y;
+            //     rx = m_Camera.transform.localEulerAngles.y;
+            // });
+            
             joystick2.OnValueChanged.AddListener(v =>
             {
                 if (v.magnitude != 0)
                 {
+                    const float minX = -60f;
+                    const float maxX = 45f;
+                    
                     ry = transform.localEulerAngles.y;
-                    rx = m_Camera.transform.localEulerAngles.y;
+                    rx = m_Camera.transform.localEulerAngles.x;
+
+                    if (rx > maxX)
+                        rx -= 360f;
+                    if (rx < minX)
+                        rx += 360f;
 
                     float rotationy = ry + v.x * rotateRange;
-                    float rotationx = Mathf.Clamp(rx + v.y * viewRange, -45, 60);
-                    m_Camera.transform.localEulerAngles = new Vector3(-rotationx, 0, 0);
+                    float rotationx = Mathf.Clamp(rx - v.y * viewRange, minX, maxX);
+                    m_Camera.transform.localEulerAngles = new Vector3(rotationx, 0, 0);
                     transform.localEulerAngles = new Vector3(0, rotationy, 0);
                 }
             });

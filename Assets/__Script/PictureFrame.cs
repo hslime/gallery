@@ -178,8 +178,8 @@ public class PictureFrame : MonoBehaviour
         playerTrans.rotation = targetRot;
 
         RectTransform rt = uiGallery.rawImage.rectTransform;
-        float screenWidth = Screen.width;
-        float screenHeight = Screen.height;
+        float screenWidth = 1280f;
+        float screenHeight = 720f;
         float screenAspect = screenWidth / screenHeight;
         float textureWidth = mainTexture.width;
         float textureHeight = mainTexture.height;
