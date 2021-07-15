@@ -8,6 +8,8 @@ public class Main : MonoBehaviour
     static public Main instance;
 
     public GameObject Player;
+    [HideInInspector]
+    public float DefaultPlayerHeight;
 
     public UITitle uiTitle;
     public UIGallery uiGallery;
@@ -23,6 +25,8 @@ public class Main : MonoBehaviour
         uiTitle.gameObject.SetActive(true);
         uiGallery.gameObject.SetActive(false);
         uiJoystick.SetActive(false);
+
+        DefaultPlayerHeight = Player.transform.position.y;
     }
 
     public bool IsLock()
