@@ -155,7 +155,7 @@ QualitySettings:
     pixelLightCount: 3
     shadows: 2
     shadowResolution: 2
-    shadowProjection: 1
+    shadowProjection: 0
     shadowCascades: 1
     shadowDistance: 50
     shadowNearPlaneOffset: 0
@@ -166,7 +166,7 @@ QualitySettings:
     textureQuality: 0
     anisotropicTextures: 1
     antiAliasing: 4
-    softParticles: 1
+    softParticles: 0
     softVegetation: 1
     realtimeReflectionProbes: 1
     billboardsFaceCameraPosition: 1
@@ -225,4 +225,5 @@ QualitySettings:
   m_PerPlatformDefaultQuality:
     Android: 0
     Standalone: 0
+    WebGL: 0
     iPhone: 0
