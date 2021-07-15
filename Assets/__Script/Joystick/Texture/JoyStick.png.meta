@@ -11,6 +11,18 @@ TextureImporter:
   - first:
       213: 21300004
     second: JoyStick_2
+  - first:
+      213: 6168679476669020422
+    second: JoyStick_0
+  - first:
+      213: 3778685573788745083
+    second: JoyStick_1
+  - first:
+      213: 1443106091295200062
+    second: JoyStick_2
+  - first:
+      213: 409173196403169920
+    second: JoyStick_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -103,19 +115,19 @@ TextureImporter:
       name: JoyStick_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 272
-        width: 238
-        height: 238
+        x: 7
+        y: 276
+        width: 228
+        height: 228
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9229dae539ac4e44d9d7e1516f36618f
-      internalID: 21300000
+      spriteID: 609791c0d4d8b9550800000000000000
+      internalID: 6168679476669020422
       vertices: []
       indices: 
       edges: []
@@ -124,19 +136,19 @@ TextureImporter:
       name: JoyStick_1
       rect:
         serializedVersion: 2
-        x: 2
-        y: 81
-        width: 81
-        height: 189
+        x: 0
+        y: 80
+        width: 84
+        height: 192
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8462541e7abb9c84d83f2c19af7511b3
-      internalID: 21300002
+      spriteID: b7d329f4286907430800000000000000
+      internalID: 3778685573788745083
       vertices: []
       indices: 
       edges: []
@@ -145,19 +157,40 @@ TextureImporter:
       name: JoyStick_2
       rect:
         serializedVersion: 2
-        x: 85
-        y: 175
-        width: 95
-        height: 95
+        x: 84
+        y: 176
+        width: 96
+        height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02fbcb06a29529f42b535e3b36c069bb
-      internalID: 21300004
+      spriteID: e335ad81851f60410800000000000000
+      internalID: 1443106091295200062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JoyStick_4
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 75
+        width: 96
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08ad83faadcada500800000000000000
+      internalID: 409173196403169920
       vertices: []
       indices: 
       edges: []
