@@ -487,7 +487,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 7872df8882afea8448de3b14c4fdab01,
         type: 3}
       propertyPath: m_RootOrder
-      value: 38
+      value: 42
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7872df8882afea8448de3b14c4fdab01,
         type: 3}
@@ -557,7 +557,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7872df8882afea8448de3b14c4fdab01,
         type: 3}
       propertyPath: m_Name
-      value: Type_C (3)
+      value: Type_C_43
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 7872df8882afea8448de3b14c4fdab01,
         type: 3}
@@ -908,7 +908,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 7872df8882afea8448de3b14c4fdab01,
         type: 3}
       propertyPath: m_RootOrder
-      value: 39
+      value: 41
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7872df8882afea8448de3b14c4fdab01,
         type: 3}
@@ -978,7 +978,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7872df8882afea8448de3b14c4fdab01,
         type: 3}
       propertyPath: m_Name
-      value: Type_C (4)
+      value: Type_C_42
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 7872df8882afea8448de3b14c4fdab01,
         type: 3}
@@ -1056,7 +1056,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Title: 
-  Desc: 
+  Desc: "\uBB34\uC81C 29\n\n\uC21C\uC9C0,\uC544\uAD50\uD3EC\uC218,\n\uC548\uB8CC\r\n\r75
+    x 48cm\r\n\r\n\uC7A5\uC815\uC2EC 2021"
   Order: 29
 --- !u!1001 &160260261
 PrefabInstance:
@@ -1264,7 +1265,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 7872df8882afea8448de3b14c4fdab01,
         type: 3}
       propertyPath: m_RootOrder
-      value: 36
+      value: 44
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7872df8882afea8448de3b14c4fdab01,
         type: 3}
@@ -1334,7 +1335,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7872df8882afea8448de3b14c4fdab01,
         type: 3}
       propertyPath: m_Name
-      value: Type_C (1)
+      value: Type_C_45
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 7872df8882afea8448de3b14c4fdab01,
         type: 3}
@@ -1359,7 +1360,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
@@ -1429,7 +1430,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
       propertyPath: m_Name
-      value: Type_A_1 (2)
+      value: Type_A_1_28
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
@@ -1454,7 +1455,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 29
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
@@ -1524,7 +1525,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
       propertyPath: m_Name
-      value: Type_A_1 (20)
+      value: Type_A_1_17
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
@@ -1558,7 +1559,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Title: 
-  Desc: 
+  Desc: "\uBB34\uC81C 17\n\n\uC21C\uC9C0,\uC544\uAD50\uD3EC\uC218,\n\uC548\uB8CC\r\n\r75
+    x 48cm\r\n\r\n\uC7A5\uC815\uC2EC 2021"
   Order: 17
 --- !u!65 &183881237
 BoxCollider:
@@ -1605,7 +1607,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Title: 
-  Desc: 
+  Desc: "\uBB34\uC81C 30\n\n\uC21C\uC9C0,\uC544\uAD50\uD3EC\uC218,\n\uC548\uB8CC\r\n\r75
+    x 48cm\r\n\r\n\uC7A5\uC815\uC2EC 2021"
   Order: 30
 --- !u!1001 &205902893
 PrefabInstance:
@@ -1617,7 +1620,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 277b4dfda303f91469e5da319856b70d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 277b4dfda303f91469e5da319856b70d,
         type: 3}
@@ -1687,7 +1690,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 277b4dfda303f91469e5da319856b70d,
         type: 3}
       propertyPath: m_Name
-      value: Type_A (4)
+      value: Type_A_05
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 277b4dfda303f91469e5da319856b70d,
         type: 3}
@@ -1908,7 +1911,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7872df8882afea8448de3b14c4fdab01,
         type: 3}
       propertyPath: m_Name
-      value: Type_C (5)
+      value: Type_C_41
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 7872df8882afea8448de3b14c4fdab01,
         type: 3}
@@ -2083,7 +2086,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Title: 
-  Desc: 
+  Desc: "\uBB34\uC81C 34\n\n\uC21C\uC9C0,\uC544\uAD50\uD3EC\uC218,\n\uC548\uB8CC\r\n\r75
+    x 48cm\r\n\r\n\uC7A5\uC815\uC2EC 2021"
   Order: 34
 --- !u!1 &251453745
 GameObject:
@@ -2206,7 +2210,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 659916743}
-  - {fileID: 1036143944}
   - {fileID: 562240931}
   - {fileID: 291662559}
   - {fileID: 1325337942}
@@ -2216,6 +2219,22 @@ Transform:
   - {fileID: 2058276219}
   - {fileID: 1336912554}
   - {fileID: 768659743}
+  - {fileID: 824367204}
+  - {fileID: 934250661}
+  - {fileID: 1206006725}
+  - {fileID: 708694017}
+  - {fileID: 1448517399}
+  - {fileID: 1808841112}
+  - {fileID: 183881234}
+  - {fileID: 1360936321}
+  - {fileID: 607042143}
+  - {fileID: 765257395}
+  - {fileID: 577026820}
+  - {fileID: 878699974}
+  - {fileID: 2107676543}
+  - {fileID: 861335969}
+  - {fileID: 1083411007}
+  - {fileID: 1036143944}
   - {fileID: 1545342175}
   - {fileID: 182971268}
   - {fileID: 1881421515}
@@ -2224,33 +2243,18 @@ Transform:
   - {fileID: 815810427}
   - {fileID: 1877854557}
   - {fileID: 1404084001}
-  - {fileID: 765257395}
-  - {fileID: 577026820}
-  - {fileID: 607042143}
-  - {fileID: 1808841112}
-  - {fileID: 708694017}
-  - {fileID: 1448517399}
-  - {fileID: 934250661}
-  - {fileID: 1206006725}
-  - {fileID: 2107676543}
-  - {fileID: 861335969}
-  - {fileID: 183881234}
-  - {fileID: 1360936321}
-  - {fileID: 878699974}
-  - {fileID: 1083411007}
-  - {fileID: 730927564}
   - {fileID: 704546451}
-  - {fileID: 507411373}
-  - {fileID: 181229119}
-  - {fileID: 1730852400}
-  - {fileID: 70120679}
-  - {fileID: 142332388}
-  - {fileID: 234078083}
-  - {fileID: 1414803559}
-  - {fileID: 1395007239}
-  - {fileID: 691025825}
+  - {fileID: 730927564}
   - {fileID: 1826507014}
-  - {fileID: 824367204}
+  - {fileID: 691025825}
+  - {fileID: 1395007239}
+  - {fileID: 1414803559}
+  - {fileID: 234078083}
+  - {fileID: 142332388}
+  - {fileID: 70120679}
+  - {fileID: 1730852400}
+  - {fileID: 181229119}
+  - {fileID: 507411373}
   - {fileID: 1988486643}
   - {fileID: 1347279016}
   m_Father: {fileID: 0}
@@ -2538,7 +2542,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 277b4dfda303f91469e5da319856b70d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 277b4dfda303f91469e5da319856b70d,
         type: 3}
@@ -2608,7 +2612,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 277b4dfda303f91469e5da319856b70d,
         type: 3}
       propertyPath: m_Name
-      value: Type_A (2)
+      value: Type_A_03
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 277b4dfda303f91469e5da319856b70d,
         type: 3}
@@ -3029,7 +3033,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Title: 
-  Desc: 
+  Desc: "\uBB34\uC81C 3 \n\n\uC21C\uC9C0,\uC544\uAD50\uD3EC\uC218,\n\uC548\uB8CC\r\n\r48
+    x 75cm\r\n\r\n\uC7A5\uC815\uC2EC 2021"
   Order: 3
 --- !u!1001 &333087923
 PrefabInstance:
@@ -3153,8 +3158,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Title: 
-  Desc: 
-  Order: 10
+  Desc: "\uBB34\uC81C 9 \n\n\uC21C\uC9C0,\uC544\uAD50\uD3EC\uC218,\n\uC548\uB8CC\r\n\r48
+    x 75cm\r\n\r\n\uC7A5\uC815\uC2EC 2021"
+  Order: 9
 --- !u!1 &365463074
 GameObject:
   m_ObjectHideFlags: 0
@@ -3648,7 +3654,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 277b4dfda303f91469e5da319856b70d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 277b4dfda303f91469e5da319856b70d,
         type: 3}
@@ -3718,7 +3724,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 277b4dfda303f91469e5da319856b70d,
         type: 3}
       propertyPath: m_Name
-      value: Type_A (6)
+      value: Type_A_07
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 277b4dfda303f91469e5da319856b70d,
         type: 3}
@@ -3765,7 +3771,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Title: 
-  Desc: 
+  Desc: "\uBB34\uC81C 37 \n\n\uC21C\uC9C0,\uC544\uAD50\uD3EC\uC218,\n\uC548\uB8CC\r\n\r48
+    x 75cm\r\n\r\n\uC7A5\uC815\uC2EC 2021"
   Order: 37
 --- !u!1 &409931882
 GameObject:
@@ -3982,7 +3989,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Title: 
-  Desc: 
+  Desc: "\uBB34\uC81C 21\n\n\uC21C\uC9C0,\uC544\uAD50\uD3EC\uC218,\n\uC548\uB8CC\r\n\r75
+    x 48cm\r\n\r\n\uC7A5\uC815\uC2EC 2021"
   Order: 21
 --- !u!1001 &454326411
 PrefabInstance:
@@ -4658,7 +4666,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 7872df8882afea8448de3b14c4fdab01,
         type: 3}
       propertyPath: m_RootOrder
-      value: 35
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7872df8882afea8448de3b14c4fdab01,
         type: 3}
@@ -4728,7 +4736,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7872df8882afea8448de3b14c4fdab01,
         type: 3}
       propertyPath: m_Name
-      value: Type_C
+      value: Type_C_46
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 7872df8882afea8448de3b14c4fdab01,
         type: 3}
@@ -5065,7 +5073,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 277b4dfda303f91469e5da319856b70d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 277b4dfda303f91469e5da319856b70d,
         type: 3}
@@ -5135,7 +5143,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 277b4dfda303f91469e5da319856b70d,
         type: 3}
       propertyPath: m_Name
-      value: Type_A (1)
+      value: Type_A_02
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 277b4dfda303f91469e5da319856b70d,
         type: 3}
@@ -5230,7 +5238,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
       propertyPath: m_Name
-      value: Type_A_1 (10)
+      value: Type_A_1_21
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
@@ -5370,7 +5378,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Title: 
-  Desc: 
+  Desc: "\uBB34\uC81C 15\n\n\uC21C\uC9C0,\uC544\uAD50\uD3EC\uC218,\n\uC548\uB8CC\r\n\r75
+    x 48cm\r\n\r\n\uC7A5\uC815\uC2EC 2021"
   Order: 15
 --- !u!1 &603620630
 GameObject:
@@ -5475,7 +5484,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 21
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
@@ -5545,7 +5554,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
       propertyPath: m_Name
-      value: Type_A_1 (11)
+      value: Type_A_1_19
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
@@ -5749,7 +5758,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Title: 
-  Desc: 
+  Desc: "\uBB34\uC81C 28\n\n\uC21C\uC9C0,\uC544\uAD50\uD3EC\uC218,\n\uC548\uB8CC\r\n\r75
+    x 48cm\r\n\r\n\uC7A5\uC815\uC2EC 2021"
   Order: 28
 --- !u!1001 &640152710
 PrefabInstance:
@@ -6292,7 +6302,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 277b4dfda303f91469e5da319856b70d,
         type: 3}
       propertyPath: m_Name
-      value: Type_A
+      value: Type_A_01
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 277b4dfda303f91469e5da319856b70d,
         type: 3}
@@ -6317,7 +6327,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 7872df8882afea8448de3b14c4fdab01,
         type: 3}
       propertyPath: m_RootOrder
-      value: 43
+      value: 37
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7872df8882afea8448de3b14c4fdab01,
         type: 3}
@@ -6387,7 +6397,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7872df8882afea8448de3b14c4fdab01,
         type: 3}
       propertyPath: m_Name
-      value: Type_C (8)
+      value: Type_C_38
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 7872df8882afea8448de3b14c4fdab01,
         type: 3}
@@ -6797,7 +6807,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 0ea48fee41866b14484e680db498b30f,
         type: 3}
       propertyPath: m_Name
-      value: Type_B_1
+      value: Type_B_1_35
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 0ea48fee41866b14484e680db498b30f,
         type: 3}
@@ -6834,7 +6844,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 23
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
@@ -6904,7 +6914,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
       propertyPath: m_Name
-      value: Type_A_1 (13)
+      value: Type_A_1_14
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
@@ -7244,7 +7254,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 1f0d93cf8c0dc18419c0164ed5e4b963,
         type: 3}
       propertyPath: m_RootOrder
-      value: 33
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1f0d93cf8c0dc18419c0164ed5e4b963,
         type: 3}
@@ -7314,7 +7324,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1f0d93cf8c0dc18419c0164ed5e4b963,
         type: 3}
       propertyPath: m_Name
-      value: Type_B
+      value: Type_B_36
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 1f0d93cf8c0dc18419c0164ed5e4b963,
         type: 3}
@@ -7629,7 +7639,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Title: 
-  Desc: 
+  Desc: "\uBB34\uC81C 36 \n\n\uC21C\uC9C0,\uC544\uAD50\uD3EC\uC218,\n\uC548\uB8CC\r\n\r48
+    x 75cm\r\n\r\n\uC7A5\uC815\uC2EC 2021"
   Order: 36
 --- !u!1001 &756003978
 PrefabInstance:
@@ -7836,7 +7847,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Title: 
-  Desc: 
+  Desc: "\uBB34\uC81C 5 \n\n\uC21C\uC9C0,\uC544\uAD50\uD3EC\uC218,\n\uC548\uB8CC\r\n\r48
+    x 75cm\r\n\r\n\uC7A5\uC815\uC2EC 2021"
   Order: 5
 --- !u!1001 &765257394
 PrefabInstance:
@@ -7918,7 +7930,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
       propertyPath: m_Name
-      value: Type_A_1 (9)
+      value: Type_A_1_20
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
@@ -7943,7 +7955,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 277b4dfda303f91469e5da319856b70d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 277b4dfda303f91469e5da319856b70d,
         type: 3}
@@ -8013,7 +8025,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 277b4dfda303f91469e5da319856b70d,
         type: 3}
       propertyPath: m_Name
-      value: Type_A (9)
+      value: Type_A_10
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 277b4dfda303f91469e5da319856b70d,
         type: 3}
@@ -8047,8 +8059,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Title: 
-  Desc: 
-  Order: 7
+  Desc: "\uBB34\uC81C 10\n\n\uC21C\uC9C0,\uC544\uAD50\uD3EC\uC218,\n\uC548\uB8CC\r\n\r48
+    x 75cm\r\n\r\n\uC7A5\uC815\uC2EC 2021"
+  Order: 10
 --- !u!65 &768659746
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8351,7 +8364,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Title: 
-  Desc: 
+  Desc: "\uBB34\uC81C 6 \n\n\uC21C\uC9C0,\uC544\uAD50\uD3EC\uC218,\n\uC548\uB8CC\r\n\r48
+    x 75cm\r\n\r\n\uC7A5\uC815\uC2EC 2021"
   Order: 6
 --- !u!1 &789586229
 GameObject:
@@ -8497,7 +8511,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 31
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
@@ -8567,7 +8581,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
       propertyPath: m_Name
-      value: Type_A_1 (6)
+      value: Type_A_1_32
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
@@ -8639,7 +8653,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: b10fcdb90a137524e8faeba87e6f6c14,
         type: 3}
       propertyPath: m_RootOrder
-      value: 45
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b10fcdb90a137524e8faeba87e6f6c14,
         type: 3}
@@ -8709,7 +8723,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b10fcdb90a137524e8faeba87e6f6c14,
         type: 3}
       propertyPath: m_Name
-      value: Type_D
+      value: Type_D_11
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: b10fcdb90a137524e8faeba87e6f6c14,
         type: 3}
@@ -9007,7 +9021,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 28
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
@@ -9077,7 +9091,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
       propertyPath: m_Name
-      value: Type_A_1 (19)
+      value: Type_A_1_24
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
@@ -9111,7 +9125,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Title: 
-  Desc: 
+  Desc: "\uBB34\uC81C 24\n\n\uC21C\uC9C0,\uC544\uAD50\uD3EC\uC218,\n\uC548\uB8CC\r\n\r75
+    x 48cm\r\n\r\n\uC7A5\uC815\uC2EC 2021"
   Order: 24
 --- !u!65 &861335972
 BoxCollider:
@@ -9211,7 +9226,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 31
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
@@ -9281,7 +9296,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
       propertyPath: m_Name
-      value: Type_A_1 (22)
+      value: Type_A_1_22
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
@@ -9315,7 +9330,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Title: 
-  Desc: 
+  Desc: "\uBB34\uC81C 22\n\n\uC21C\uC9C0,\uC544\uAD50\uD3EC\uC218,\n\uC548\uB8CC\r\n\r75
+    x 48cm\r\n\r\n\uC7A5\uC815\uC2EC 2021"
   Order: 22
 --- !u!65 &878699977
 BoxCollider:
@@ -10136,7 +10152,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 25
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
@@ -10206,7 +10222,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
       propertyPath: m_Name
-      value: Type_A_1 (16)
+      value: Type_A_1_12
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
@@ -11482,7 +11498,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Title: 
-  Desc: 
+  Desc: "\uBB34\uC81C 16\n\n\uC21C\uC9C0,\uC544\uAD50\uD3EC\uC218,\n\uC548\uB8CC\r\n\r75
+    x 48cm\r\n\r\n\uC7A5\uC815\uC2EC 2021"
   Order: 16
 --- !u!1001 &1031895073
 PrefabInstance:
@@ -11569,7 +11586,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
@@ -11639,7 +11656,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
       propertyPath: m_Name
-      value: Type_A_1
+      value: Type_A_1_26
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
@@ -11866,7 +11883,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Title: 
-  Desc: 
+  Desc: "\uBB34\uC81C 41 \n\n\uC21C\uC9C0,\uC544\uAD50\uD3EC\uC218,\n\uC548\uB8CC\r\n\r48
+    x 75cm\r\n\r\n\uC7A5\uC815\uC2EC 2021"
   Order: 41
 --- !u!1001 &1045872305
 PrefabInstance:
@@ -12074,7 +12092,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Title: 
-  Desc: 
+  Desc: "\uBB34\uC81C 20\n\n\uC21C\uC9C0,\uC544\uAD50\uD3EC\uC218,\n\uC548\uB8CC\r\n\r75
+    x 48cm\r\n\r\n\uC7A5\uC815\uC2EC 2021"
   Order: 20
 --- !u!1 &1076643219
 GameObject:
@@ -12134,7 +12153,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 32
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
@@ -12204,7 +12223,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
       propertyPath: m_Name
-      value: Type_A_1 (23)
+      value: Type_A_1_25
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
@@ -12238,7 +12257,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Title: 
-  Desc: 
+  Desc: "\uBB34\uC81C 25\n\n\uC21C\uC9C0,\uC544\uAD50\uD3EC\uC218,\n\uC548\uB8CC\r\n\r75
+    x 48cm\r\n\r\n\uC7A5\uC815\uC2EC 2021"
   Order: 25
 --- !u!65 &1083411010
 BoxCollider:
@@ -12453,7 +12473,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Title: 
-  Desc: 
+  Desc: "\uBB34\uC81C 45 \n\n\uC21C\uC9C0,\uC544\uAD50\uD3EC\uC218,\n\uC548\uB8CC\r\n\r48
+    x 75cm\r\n\r\n\uC7A5\uC815\uC2EC 2021"
   Order: 45
 --- !u!1 &1099131879 stripped
 GameObject:
@@ -12487,7 +12508,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Title: 
-  Desc: 
+  Desc: "\uBB34\uC81C 11\n\n\uC21C\uC9C0,\uC544\uAD50\uD3EC\uC218,\n\uC548\uB8CC\r\n\r43
+    x 38cm\r\n\r\n\uC7A5\uC815\uC2EC 2021"
   Order: 11
 --- !u!1 &1113441500 stripped
 GameObject:
@@ -12521,7 +12543,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Title: 
-  Desc: 
+  Desc: "\uBB34\uC81C 26\n\n\uC21C\uC9C0,\uC544\uAD50\uD3EC\uC218,\n\uC548\uB8CC\r\n\r75
+    x 48cm\r\n\r\n\uC7A5\uC815\uC2EC 2021"
   Order: 26
 --- !u!1 &1117548239 stripped
 GameObject:
@@ -12555,7 +12578,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Title: 
-  Desc: 
+  Desc: "\uBB34\uC81C 31\n\n\uC21C\uC9C0,\uC544\uAD50\uD3EC\uC218,\n\uC548\uB8CC\r\n\r75
+    x 48cm\r\n\r\n\uC7A5\uC815\uC2EC 2021"
   Order: 31
 --- !u!1001 &1120191266
 PrefabInstance:
@@ -13120,7 +13144,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Title: 
-  Desc: 
+  Desc: "\uBB34\uC81C 12\n\n\uC21C\uC9C0,\uC544\uAD50\uD3EC\uC218,\n\uC548\uB8CC\r\n\r75
+    x 48cm\r\n\r\n\uC7A5\uC815\uC2EC 2021"
   Order: 12
 --- !u!1 &1163152452
 GameObject:
@@ -13225,7 +13250,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 29
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
@@ -13295,7 +13320,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
       propertyPath: m_Name
-      value: Type_A_1 (4)
+      value: Type_A_1_30
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
@@ -13667,7 +13692,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 26
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
@@ -13737,7 +13762,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
       propertyPath: m_Name
-      value: Type_A_1 (17)
+      value: Type_A_1_13
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
@@ -13771,7 +13796,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Title: 
-  Desc: 
+  Desc: "\uBB34\uC81C 13\n\n\uC21C\uC9C0,\uC544\uAD50\uD3EC\uC218,\n\uC548\uB8CC\r\n\r75
+    x 48cm\r\n\r\n\uC7A5\uC815\uC2EC 2021"
   Order: 13
 --- !u!65 &1206006728
 BoxCollider:
@@ -14158,7 +14184,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Title: 
-  Desc: 
+  Desc: "\uBB34\uC81C 46 \n\n\uC21C\uC9C0,\uC544\uAD50\uD3EC\uC218,\n\uC548\uB8CC\r\n\r48
+    x 75cm\r\n\r\n\uC7A5\uC815\uC2EC 2021"
   Order: 46
 --- !u!1 &1262981476 stripped
 GameObject:
@@ -14192,7 +14219,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Title: 
-  Desc: 
+  Desc: "\uBB34\uC81C 32\n\n\uC21C\uC9C0,\uC544\uAD50\uD3EC\uC218,\n\uC548\uB8CC\r\n\r75
+    x 48cm\r\n\r\n\uC7A5\uC815\uC2EC 2021"
   Order: 32
 --- !u!1 &1263076528
 GameObject:
@@ -14429,7 +14457,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Title: 
-  Desc: 
+  Desc: "\uBB34\uC81C 35 \n\n\uC21C\uC9C0,\uC544\uAD50\uD3EC\uC218,\n\uC548\uB8CC\r\n\r48
+    x 75cm\r\n\r\n\uC7A5\uC815\uC2EC 2021"
   Order: 35
 --- !u!1 &1290047956
 GameObject:
@@ -14934,7 +14963,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 277b4dfda303f91469e5da319856b70d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 277b4dfda303f91469e5da319856b70d,
         type: 3}
@@ -15004,7 +15033,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 277b4dfda303f91469e5da319856b70d,
         type: 3}
       propertyPath: m_Name
-      value: Type_A (3)
+      value: Type_A_04
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 277b4dfda303f91469e5da319856b70d,
         type: 3}
@@ -15119,7 +15148,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 277b4dfda303f91469e5da319856b70d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 277b4dfda303f91469e5da319856b70d,
         type: 3}
@@ -15189,7 +15218,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 277b4dfda303f91469e5da319856b70d,
         type: 3}
       propertyPath: m_Name
-      value: Type_A (8)
+      value: Type_A_09
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 277b4dfda303f91469e5da319856b70d,
         type: 3}
@@ -15531,7 +15560,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: 
   Desc: 
-  Order: 50
+  Order: 101
 --- !u!65 &1347279019
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15831,7 +15860,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 30
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
@@ -15901,7 +15930,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
       propertyPath: m_Name
-      value: Type_A_1 (21)
+      value: Type_A_1_18
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
@@ -15935,7 +15964,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Title: 
-  Desc: 
+  Desc: "\uBB34\uC81C 18\n\n\uC21C\uC9C0,\uC544\uAD50\uD3EC\uC218,\n\uC548\uB8CC\r\n\r75
+    x 48cm\r\n\r\n\uC7A5\uC815\uC2EC 2021"
   Order: 18
 --- !u!65 &1360936324
 BoxCollider:
@@ -16263,7 +16293,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 7872df8882afea8448de3b14c4fdab01,
         type: 3}
       propertyPath: m_RootOrder
-      value: 42
+      value: 38
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7872df8882afea8448de3b14c4fdab01,
         type: 3}
@@ -16333,7 +16363,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7872df8882afea8448de3b14c4fdab01,
         type: 3}
       propertyPath: m_Name
-      value: Type_C (7)
+      value: Type_C_39
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 7872df8882afea8448de3b14c4fdab01,
         type: 3}
@@ -16363,7 +16393,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 33
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
@@ -16433,7 +16463,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
       propertyPath: m_Name
-      value: Type_A_1 (8)
+      value: Type_A_1_34
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
@@ -16626,7 +16656,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 7872df8882afea8448de3b14c4fdab01,
         type: 3}
       propertyPath: m_RootOrder
-      value: 41
+      value: 39
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7872df8882afea8448de3b14c4fdab01,
         type: 3}
@@ -16696,7 +16726,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7872df8882afea8448de3b14c4fdab01,
         type: 3}
       propertyPath: m_Name
-      value: Type_C (6)
+      value: Type_C_40
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 7872df8882afea8448de3b14c4fdab01,
         type: 3}
@@ -17154,7 +17184,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Title: 
-  Desc: 
+  Desc: "\uBB34\uC81C 14\n\n\uC21C\uC9C0,\uC544\uAD50\uD3EC\uC218,\n\uC548\uB8CC\r\n\r75
+    x 48cm\r\n\r\n\uC7A5\uC815\uC2EC 2021"
   Order: 14
 --- !u!1 &1439625059
 GameObject:
@@ -17259,7 +17290,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 24
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
@@ -17329,7 +17360,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
       propertyPath: m_Name
-      value: Type_A_1 (14)
+      value: Type_A_1_15
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
@@ -17562,7 +17593,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Title: 
-  Desc: 
+  Desc: "\uBB34\uC81C 39 \n\n\uC21C\uC9C0,\uC544\uAD50\uD3EC\uC218,\n\uC548\uB8CC\r\n\r48
+    x 75cm\r\n\r\n\uC7A5\uC815\uC2EC 2021"
   Order: 39
 --- !u!1001 &1474197449
 PrefabInstance:
@@ -17985,7 +18017,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Title: 
-  Desc: 
+  Desc: "\uBB34\uC81C 27\n\n\uC21C\uC9C0,\uC544\uAD50\uD3EC\uC218,\n\uC548\uB8CC\r\n\r75
+    x 48cm\r\n\r\n\uC7A5\uC815\uC2EC 2021"
   Order: 27
 --- !u!1001 &1530670355
 PrefabInstance:
@@ -18104,8 +18137,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Title: 
-  Desc: 
-  Order: 9
+  Desc: "\uBB34\uC81C 8 \n\n\uC21C\uC9C0,\uC544\uAD50\uD3EC\uC218,\n\uC548\uB8CC\r\n\r48
+    x 75cm\r\n\r\n\uC7A5\uC815\uC2EC 2021"
+  Order: 8
 --- !u!1001 &1544426357
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18190,7 +18224,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
@@ -18260,7 +18294,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
       propertyPath: m_Name
-      value: Type_A_1 (1)
+      value: Type_A_1_27
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
@@ -18475,7 +18509,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Title: 
-  Desc: (48x75)
+  Desc: "\uBB34\uC81C 1 \n\n\uC21C\uC9C0,\uC544\uAD50\uD3EC\uC218,\n\uC548\uB8CC\r\n\r48
+    x 75cm\r\n\r\n\uC7A5\uC815\uC2EC 2021"
   Order: 1
 --- !u!1 &1582897210 stripped
 GameObject:
@@ -19207,7 +19242,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
@@ -19277,7 +19312,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
       propertyPath: m_Name
-      value: Type_A_1 (5)
+      value: Type_A_1_31
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
@@ -19324,7 +19359,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Title: 
-  Desc: 
+  Desc: "\uBB34\uC81C 33\n\n\uC21C\uC9C0,\uC544\uAD50\uD3EC\uC218,\n\uC548\uB8CC\r\n\r75
+    x 48cm\r\n\r\n\uC7A5\uC815\uC2EC 2021"
   Order: 33
 --- !u!1 &1706346421
 GameObject:
@@ -19451,7 +19487,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Title: 
-  Desc: 
+  Desc: "\uBB34\uC81C 44 \n\n\uC21C\uC9C0,\uC544\uAD50\uD3EC\uC218,\n\uC548\uB8CC\r\n\r48
+    x 75cm\r\n\r\n\uC7A5\uC815\uC2EC 2021"
   Order: 44
 --- !u!1001 &1715671509
 PrefabInstance:
@@ -19638,7 +19675,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 7872df8882afea8448de3b14c4fdab01,
         type: 3}
       propertyPath: m_RootOrder
-      value: 37
+      value: 43
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7872df8882afea8448de3b14c4fdab01,
         type: 3}
@@ -19708,7 +19745,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7872df8882afea8448de3b14c4fdab01,
         type: 3}
       propertyPath: m_Name
-      value: Type_C (2)
+      value: Type_C_44
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 7872df8882afea8448de3b14c4fdab01,
         type: 3}
@@ -20046,8 +20083,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Title: 
-  Desc: 
-  Order: 8
+  Desc: "\uBB34\uC81C 7 \n\n\uC21C\uC9C0,\uC544\uAD50\uD3EC\uC218,\n\uC548\uB8CC\r\n\r48
+    x 75cm\r\n\r\n\uC7A5\uC815\uC2EC 2021"
+  Order: 7
 --- !u!1001 &1769199681
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20398,7 +20436,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Title: 
-  Desc: 
+  Desc: "\uBB34\uC81C 4 \n\n\uC21C\uC9C0,\uC544\uAD50\uD3EC\uC218,\n\uC548\uB8CC\r\n\r48
+    x 75cm\r\n\r\n\uC7A5\uC815\uC2EC 2021"
   Order: 4
 --- !u!1001 &1802649773
 PrefabInstance:
@@ -20580,7 +20619,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 22
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
@@ -20650,7 +20689,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
       propertyPath: m_Name
-      value: Type_A_1 (12)
+      value: Type_A_1_16
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
@@ -20675,7 +20714,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 7872df8882afea8448de3b14c4fdab01,
         type: 3}
       propertyPath: m_RootOrder
-      value: 44
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7872df8882afea8448de3b14c4fdab01,
         type: 3}
@@ -20745,7 +20784,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7872df8882afea8448de3b14c4fdab01,
         type: 3}
       propertyPath: m_Name
-      value: Type_C (9)
+      value: Type_C_37
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 7872df8882afea8448de3b14c4fdab01,
         type: 3}
@@ -21104,7 +21143,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 32
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
@@ -21174,7 +21213,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
       propertyPath: m_Name
-      value: Type_A_1 (7)
+      value: Type_A_1_33
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
@@ -21199,7 +21238,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
@@ -21269,7 +21308,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
       propertyPath: m_Name
-      value: Type_A_1 (3)
+      value: Type_A_1_29
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
@@ -21457,7 +21496,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Title: 
-  Desc: 
+  Desc: "\uBB34\uC81C 42 \n\n\uC21C\uC9C0,\uC544\uAD50\uD3EC\uC218,\n\uC548\uB8CC\r\n\r48
+    x 75cm\r\n\r\n\uC7A5\uC815\uC2EC 2021"
   Order: 42
 --- !u!1001 &1907570065
 PrefabInstance:
@@ -21743,7 +21783,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Title: 
-  Desc: 
+  Desc: "\uBB34\uC81C 40 \n\n\uC21C\uC9C0,\uC544\uAD50\uD3EC\uC218,\n\uC548\uB8CC\r\n\r48
+    x 75cm\r\n\r\n\uC7A5\uC815\uC2EC 2021"
   Order: 40
 --- !u!1 &1960336436
 GameObject:
@@ -22044,7 +22085,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: 
   Desc: 
-  Order: 51
+  Order: 100
 --- !u!65 &1988486646
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22574,7 +22615,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Title: 
-  Desc: 
+  Desc: "\uBB34\uC81C 19\n\n\uC21C\uC9C0,\uC544\uAD50\uD3EC\uC218,\n\uC548\uB8CC\r\n\r75
+    x 48cm\r\n\r\n\uC7A5\uC815\uC2EC 2021"
   Order: 19
 --- !u!1 &2052397932
 GameObject:
@@ -22616,7 +22658,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 277b4dfda303f91469e5da319856b70d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 277b4dfda303f91469e5da319856b70d,
         type: 3}
@@ -22686,7 +22728,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 277b4dfda303f91469e5da319856b70d,
         type: 3}
       propertyPath: m_Name
-      value: Type_A (7)
+      value: Type_A_08
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 277b4dfda303f91469e5da319856b70d,
         type: 3}
@@ -22733,7 +22775,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Title: 
-  Desc: 
+  Desc: "\uBB34\uC81C 43 \n\n\uC21C\uC9C0,\uC544\uAD50\uD3EC\uC218,\n\uC548\uB8CC\r\n\r48
+    x 75cm\r\n\r\n\uC7A5\uC815\uC2EC 2021"
   Order: 43
 --- !u!1 &2079335290
 GameObject:
@@ -23011,7 +23054,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 27
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
@@ -23081,7 +23124,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
       propertyPath: m_Name
-      value: Type_A_1 (18)
+      value: Type_A_1_23
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: fa8d83efdd8d8ee4ba660127d99102cb,
         type: 3}
@@ -23115,7 +23158,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Title: 
-  Desc: 
+  Desc: "\uBB34\uC81C 23\n\n\uC21C\uC9C0,\uC544\uAD50\uD3EC\uC218,\n\uC548\uB8CC\r\n\r75
+    x 48cm\r\n\r\n\uC7A5\uC815\uC2EC 2021"
   Order: 23
 --- !u!65 &2107676546
 BoxCollider:
@@ -23233,7 +23277,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 277b4dfda303f91469e5da319856b70d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 277b4dfda303f91469e5da319856b70d,
         type: 3}
@@ -23303,7 +23347,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 277b4dfda303f91469e5da319856b70d,
         type: 3}
       propertyPath: m_Name
-      value: Type_A (5)
+      value: Type_A_06
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 277b4dfda303f91469e5da319856b70d,
         type: 3}
@@ -23536,7 +23580,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Title: 
-  Desc: 
+  Desc: "\uBB34\uC81C 38 \n\n\uC21C\uC9C0,\uC544\uAD50\uD3EC\uC218,\n\uC548\uB8CC\r\n\r48
+    x 75cm\r\n\r\n\uC7A5\uC815\uC2EC 2021"
   Order: 38
 --- !u!1 &2136974897 stripped
 GameObject:
@@ -23570,7 +23615,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Title: 
-  Desc: 
+  Desc: "\uBB34\uC81C 2\n\n\uC21C\uC9C0,\uC544\uAD50\uD3EC\uC218,\n\uC548\uB8CC\r\n\r48
+    x 75cm\r\n\r\n\uC7A5\uC815\uC2EC 2021"
   Order: 2
 --- !u!1 &2138771537
 GameObject:
@@ -23681,6 +23727,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3515154956392338382, guid: 969e29e15c495d34ca86d53d8a4d3233,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3515154957297339368, guid: 969e29e15c495d34ca86d53d8a4d3233,
         type: 3}
       propertyPath: m_Enabled
@@ -23720,6 +23771,108 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 159
+      objectReference: {fileID: 0}
+    - target: {fileID: 7560247305262797204, guid: 969e29e15c495d34ca86d53d8a4d3233,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7560247305262797204, guid: 969e29e15c495d34ca86d53d8a4d3233,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7560247305262797204, guid: 969e29e15c495d34ca86d53d8a4d3233,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7560247305262797204, guid: 969e29e15c495d34ca86d53d8a4d3233,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7560247305262797204, guid: 969e29e15c495d34ca86d53d8a4d3233,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 630.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7560247305262797204, guid: 969e29e15c495d34ca86d53d8a4d3233,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 794.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7560247305262797204, guid: 969e29e15c495d34ca86d53d8a4d3233,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -117
+      objectReference: {fileID: 0}
+    - target: {fileID: 7560247305262797204, guid: 969e29e15c495d34ca86d53d8a4d3233,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 96
+      objectReference: {fileID: 0}
+    - target: {fileID: 7560247305262797205, guid: 969e29e15c495d34ca86d53d8a4d3233,
+        type: 3}
+      propertyPath: m_Text
+      value: "\uBB34\uC81C 1 \n\n\uC21C\uC9C0,\uC544\uAD50\uD3EC\uC218,\n\uC548\uB8CC\r\n\r48
+        x 75cm\r\n\r\n\uC7A5\uC815\uC2EC 2021"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7560247305262797205, guid: 969e29e15c495d34ca86d53d8a4d3233,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7560247305262797205, guid: 969e29e15c495d34ca86d53d8a4d3233,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7560247305262797205, guid: 969e29e15c495d34ca86d53d8a4d3233,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7560247305262797205, guid: 969e29e15c495d34ca86d53d8a4d3233,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 05b052583be0f2448a50526a417b85bd,
+        type: 3}
+    - target: {fileID: 7560247305262797205, guid: 969e29e15c495d34ca86d53d8a4d3233,
+        type: 3}
+      propertyPath: m_FontData.m_BestFit
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7560247305262797205, guid: 969e29e15c495d34ca86d53d8a4d3233,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 7560247305262797205, guid: 969e29e15c495d34ca86d53d8a4d3233,
+        type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7560247305262797205, guid: 969e29e15c495d34ca86d53d8a4d3233,
+        type: 3}
+      propertyPath: m_FontData.m_FontStyle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7560247305262797205, guid: 969e29e15c495d34ca86d53d8a4d3233,
+        type: 3}
+      propertyPath: m_FontData.m_LineSpacing
+      value: 1.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7560247305262797205, guid: 969e29e15c495d34ca86d53d8a4d3233,
+        type: 3}
+      propertyPath: m_FontData.m_HorizontalOverflow
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7560247305262797207, guid: 969e29e15c495d34ca86d53d8a4d3233,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7560247305497610723, guid: 969e29e15c495d34ca86d53d8a4d3233,
         type: 3}
