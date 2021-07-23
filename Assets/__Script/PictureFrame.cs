@@ -105,6 +105,8 @@ public class PictureFrame : MonoBehaviour
 
         Debug.Log(string.Format("OnMouseUp {0}", name));
 
+        Main.instance.PlaySelect();
+
         ZoomStart(false);
     }
 

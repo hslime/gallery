@@ -22,7 +22,10 @@
             {
                 if (v.magnitude != 0)
                 {
-                    Vector3 direction = transform.TransformDirection(new Vector3(v.x, 0, v.y));
+                    float vx = v.x * (float)Screen.width / 1280f;
+                    float vy = v.y * (float)Screen.height / 720f;
+
+                    Vector3 direction = transform.TransformDirection(new Vector3(vx, 0, vy));
                     controller.SimpleMove(direction * speed);
                 }
             });
@@ -37,6 +40,9 @@
             {
                 if (v.magnitude != 0)
                 {
+                    float vx = v.x * (float)Screen.width / 1280f;
+                    float vy = v.y * (float)Screen.height / 720f;
+
                     const float minX = -60f;
                     const float maxX = 45f;
                     
@@ -48,8 +54,8 @@
                     if (rx < minX)
                         rx += 360f;
 
-                    float rotationy = ry + v.x * rotateRange;
-                    float rotationx = Mathf.Clamp(rx - v.y * viewRange, minX, maxX);
+                    float rotationy = ry + vx * rotateRange;
+                    float rotationx = Mathf.Clamp(rx - vy * viewRange, minX, maxX);
                     m_Camera.transform.localEulerAngles = new Vector3(rotationx, 0, 0);
                     transform.localEulerAngles = new Vector3(0, rotationy, 0);
                 }

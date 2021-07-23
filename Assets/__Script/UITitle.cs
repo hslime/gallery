@@ -6,10 +6,16 @@ using UnityEngine.UI;
 
 public class UITitle : MonoBehaviour
 {
-    public float disappearTime = 1f;
+    public CanvasGroup MainTitle;
+    public float MainTitleDisappearTime = 1f;
+
+    public CanvasGroup Guide;
+    public float GuideDurationTime = 3f;
+    public float GuideDisappearTime = 1.5f;
+
 
     private Animator uiAnimator;
-    private CanvasGroup group;
+    
 
     Coroutine onDisappear;
 
@@ -17,8 +23,8 @@ public class UITitle : MonoBehaviour
     private void Awake()
     {
         uiAnimator = GetComponent<Animator>();
-        group = GetComponent<CanvasGroup>();
-        group.alpha = 0f;
+
+        Guide.alpha = 0f;
 
         onDisappear = null;
     }
@@ -37,8 +43,8 @@ public class UITitle : MonoBehaviour
 
         Main.instance.PlaySelect();
 
-        if (IsPlayingAnim() == true)
-            return;
+        //if (IsPlayingAnim() == true)
+        //    return;
 
         onDisappear = StartCoroutine(OnDisappear());
     }
@@ -66,13 +72,13 @@ public class UITitle : MonoBehaviour
         float ratio = 1f;
         Animator camAnimator = Camera.main.GetComponent<Animator>();
 
-        float time = disappearTime;
+        float time = MainTitleDisappearTime;
         while (time > 0f)
         {
             time -= Time.deltaTime;
-            ratio = Mathf.Max(0f, time / disappearTime);
+            ratio = Mathf.Max(0f, time / MainTitleDisappearTime);
 
-            group.alpha = ratio;
+            MainTitle.alpha = ratio;
             camAnimator.speed = ratio;
 
             yield return null;
@@ -81,6 +87,26 @@ public class UITitle : MonoBehaviour
         camAnimator.enabled = false;
         Camera.main.transform.localPosition = Vector3.zero;
         Camera.main.transform.localRotation = Quaternion.identity;
+
+
+        // 
+        Guide.alpha = 1f;
+
+        yield return new WaitForSeconds(GuideDurationTime);
+
+        time = GuideDisappearTime;
+        while (time > 0f)
+        {
+            time -= Time.deltaTime;
+            ratio = Mathf.Max(0f, time / MainTitleDisappearTime);
+
+            Guide.alpha = ratio;
+
+            yield return null;
+        }
+
+        Guide.alpha = 0f;
+
 
         gameObject.SetActive(false);
         Main.instance.Lock(false);
