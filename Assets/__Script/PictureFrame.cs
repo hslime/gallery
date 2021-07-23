@@ -26,7 +26,7 @@ public class PictureFrame : MonoBehaviour
     private void Awake()
     {
         lists.Add(this);
-        lists.OrderBy(x => x.Order);
+        lists = lists.OrderBy(x => x.Order).ToList();
 
         FindTexture();
     }

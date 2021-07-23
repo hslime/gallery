@@ -15,6 +15,11 @@ public class Main : MonoBehaviour
     public UIGallery uiGallery;
     public GameObject uiJoystick;
 
+    public float fadeBGM = 5f;
+    public AudioSource BGM;
+    public AudioSource Close;
+    public AudioSource Select;
+
     private bool isLock = false;
 
 
@@ -27,6 +32,23 @@ public class Main : MonoBehaviour
         uiJoystick.SetActive(false);
 
         DefaultPlayerHeight = Player.transform.position.y;
+        StartCoroutine(OnPlayBGM());
+    }
+
+    IEnumerator OnPlayBGM()
+    {
+        BGM.volume = 0f;
+        BGM.Play();
+
+        float delta = 0f;
+        while (delta < fadeBGM)
+        {
+            delta += Time.deltaTime;
+            BGM.volume = delta / fadeBGM;
+            yield return null;
+        }
+
+        BGM.volume = 1f;
     }
 
     public bool IsLock()
@@ -38,5 +60,14 @@ public class Main : MonoBehaviour
     {
         this.isLock = isLock;
     }
-    
+
+    public void PlayClose()
+    {
+        Close.Play();
+    }
+
+    public void PlaySelect()
+    {
+        Select.Play();
+    }
 }

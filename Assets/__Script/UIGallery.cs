@@ -17,18 +17,21 @@ public class UIGallery : MonoBehaviour
     public void OnClickPrev()
     {
         Debug.Log("OnClickPrev()");
+        Main.instance.PlaySelect();
         PictureFrame.NextPicture(false);
     }
 
     public void OnClickNext()
     {
         Debug.Log("OnClickNext()");
+        Main.instance.PlaySelect();
         PictureFrame.NextPicture(true);
     }
 
     public void OnClickClose()
     {
         Debug.Log("OnClickClose()");
+        Main.instance.PlayClose();
         gameObject.SetActive(false);
     }
 }

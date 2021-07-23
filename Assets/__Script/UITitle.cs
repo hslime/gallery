@@ -35,6 +35,8 @@ public class UITitle : MonoBehaviour
 
         Debug.Log("OnClickBackground()");
 
+        Main.instance.PlaySelect();
+
         if (IsPlayingAnim() == true)
             return;
 
