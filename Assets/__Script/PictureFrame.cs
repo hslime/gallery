@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Linq;
-using System.Collections.Generic;
 using UnityEditor;
+using UnityEngine.EventSystems;
 
 [RequireComponent(typeof(Collider))]
 public class PictureFrame : MonoBehaviour
@@ -89,6 +89,19 @@ public class PictureFrame : MonoBehaviour
 
     private void OnMouseDown()
     {
+        Vector3 touchPos = Vector3.zero;
+#if UNITY_EDITOR
+        touchPos = Input.mousePosition;
+#else
+        if (Input.touchCount > 0)
+            touchPos = Input.GetTouch(0).position;
+        else
+            return;
+#endif
+
+        if (IsPointerOverUIObject(touchPos) == true)
+            return;
+
         isDown = true;
 
         Debug.Log(string.Format("OnMouseDown {0}", name));
@@ -109,6 +122,20 @@ public class PictureFrame : MonoBehaviour
 
         ZoomStart(false);
     }
+
+    public bool IsPointerOverUIObject(Vector2 touchPos)
+    {
+        PointerEventData eventDataCurrentPosition = new PointerEventData(EventSystem.current);
+
+        eventDataCurrentPosition.position = touchPos;
+
+        List<RaycastResult> results = new List<RaycastResult>();
+
+        EventSystem.current.RaycastAll(eventDataCurrentPosition, results);
+
+        return results.Count > 0;
+    }
+
 
     public void ZoomStart(bool isImmediate)
     {

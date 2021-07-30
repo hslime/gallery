@@ -22,8 +22,11 @@ namespace zFrame.UI
 
         void OnDestroy()
         {
-            joystick.OnPointerUp.RemoveListener(OnPointerUp);
-            joystick.OnValueChanged.RemoveListener(UpdateDirectionArrow);
+            if (joystick != null)
+            {
+                joystick.OnPointerUp.RemoveListener(OnPointerUp);
+                joystick.OnValueChanged.RemoveListener(UpdateDirectionArrow);
+            }
         }
         // 更新指向器的朝向
         private void UpdateDirectionArrow(Vector2 position)

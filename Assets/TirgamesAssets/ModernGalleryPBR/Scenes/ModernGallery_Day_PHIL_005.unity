@@ -8284,6 +8284,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5777161830195667611, guid: 34aa16c180b5ca54a9783aebe294a3ce,
+        type: 3}
+      propertyPath: m_RaycastTarget
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5777161830520048736, guid: 34aa16c180b5ca54a9783aebe294a3ce,
+        type: 3}
+      propertyPath: m_RaycastTarget
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 34aa16c180b5ca54a9783aebe294a3ce, type: 3}
 --- !u!114 &771840256 stripped
@@ -10204,7 +10214,7 @@ LightingSettings:
   m_AlbedoBoost: 1
   m_IndirectOutputScale: 1
   m_UsingShadowmask: 0
-  m_BakeBackend: 2
+  m_BakeBackend: 1
   m_LightmapMaxSize: 2048
   m_BakeResolution: 1
   m_Padding: 2
