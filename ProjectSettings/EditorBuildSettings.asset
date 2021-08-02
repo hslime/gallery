@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/TirgamesAssets/ModernGalleryPBR/Scenes/ModernGallery_Day_PHIL_005.unity
-    guid: 9bdfb1fb512f19240a64b99245aa039f
+    path: Assets/TirgamesAssets/ModernGalleryPBR/Scenes/4LIGHTING_01.unity
+    guid: 39e04f90a3f06954186b26a676a8efd4
   m_configObjects: {}
