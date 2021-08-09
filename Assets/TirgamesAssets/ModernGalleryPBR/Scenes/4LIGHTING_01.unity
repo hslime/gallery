@@ -2613,7 +2613,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Chang Jung Sim
 
-    The 1st individual exhibition'
+    The first individual exhibition'
 --- !u!224 &7628939749296518169
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3287,7 +3287,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Chang Jung Sim
 
-    The 1st individual exhibition'
+    The first individual exhibition'
 --- !u!222 &8628072247279854495
 CanvasRenderer:
   m_ObjectHideFlags: 0
