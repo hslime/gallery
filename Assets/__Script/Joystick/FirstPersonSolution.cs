@@ -6,7 +6,7 @@
     {
         [SerializeField] Joystick joystick;
         [SerializeField] Joystick joystick2;
-        public float speed = 5;
+        public float speed = 2;
         CharacterController controller;
 
         [SerializeField] Camera m_Camera;
