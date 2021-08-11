@@ -3089,7 +3089,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   joystick: {fileID: 771840257}
   joystick2: {fileID: 771840256}
-  speed: 3
+  speed: 2
   m_Camera: {fileID: 1113184902332217498}
   rotateRange: 0.3
   viewRange: 0.1
