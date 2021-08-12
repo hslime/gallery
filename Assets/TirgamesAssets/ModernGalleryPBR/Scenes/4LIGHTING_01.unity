@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 2121542668}
-  m_IndirectSpecularColor: {r: 0.18764007, g: 0.23453414, b: 0.30419338, a: 1}
+  m_IndirectSpecularColor: {r: 0.18828437, g: 0.2354444, b: 0.30463955, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -128,6 +128,25 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5777161829215043482, guid: 34aa16c180b5ca54a9783aebe294a3ce, type: 3}
   m_PrefabInstance: {fileID: 771840255}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &725954727
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 725954722}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9d42234d1fc0a6b439276cc28359ec0e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &771840255
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -317,13 +336,31 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1888860269}
+  - component: {fileID: 1888860268}
   m_Layer: 0
   m_Name: PostProcessVolume
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
+--- !u!114 &1888860268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1888860267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sharedProfile: {fileID: 11400000, guid: a614c9f94e002a84ba33b0a18e9ad940, type: 2}
+  isGlobal: 1
+  blendDistance: 0
+  weight: 1
+  priority: 0
 --- !u!4 &1888860269
 Transform:
   m_ObjectHideFlags: 0
@@ -1039,6 +1076,7 @@ GameObject:
   - component: {fileID: 1113184902332217498}
   - component: {fileID: 1113184902332217497}
   - component: {fileID: 2269831214949078997}
+  - component: {fileID: 1113184902332217504}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1046,6 +1084,66 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1113184902332217504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1113184902332217503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volumeTrigger: {fileID: 1113184902332217499}
+  volumeLayer:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  stopNaNPropagation: 1
+  finalBlitToCameraTarget: 0
+  antialiasingMode: 0
+  temporalAntialiasing:
+    jitterSpread: 0.75
+    sharpness: 0.25
+    stationaryBlending: 0.95
+    motionBlending: 0.85
+  subpixelMorphologicalAntialiasing:
+    quality: 2
+  fastApproximateAntialiasing:
+    fastMode: 0
+    keepAlpha: 0
+  fog:
+    enabled: 1
+    excludeSkybox: 1
+  debugLayer:
+    lightMeter:
+      width: 512
+      height: 256
+      showCurves: 1
+    histogram:
+      width: 512
+      height: 256
+      channel: 3
+    waveform:
+      exposure: 0.12
+      height: 256
+    vectorscope:
+      size: 256
+      exposure: 0.12
+    overlaySettings:
+      linearDepth: 0
+      motionColorIntensity: 4
+      motionGridSize: 64
+      colorBlindnessType: 0
+      colorBlindnessStrength: 1
+  m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
+  m_ShowToolkit: 0
+  m_ShowCustomSorter: 0
+  breakBeforeColorGrading: 0
+  m_BeforeTransparentBundles: []
+  m_BeforeStackBundles: []
+  m_AfterStackBundles: []
 --- !u!1 &1124563277991766801
 GameObject:
   m_ObjectHideFlags: 0
@@ -1186,7 +1284,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2188329565212931545
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3007,15 +3105,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8222878559009141221, guid: 06cacfd2efea19943a3453c176e61204, type: 3}
       propertyPath: m_Color.b
-      value: 0.53626734
+      value: 0.66723037
       objectReference: {fileID: 0}
     - target: {fileID: 8222878559009141221, guid: 06cacfd2efea19943a3453c176e61204, type: 3}
       propertyPath: m_Color.g
-      value: 0.7428586
+      value: 0.8054444
       objectReference: {fileID: 0}
     - target: {fileID: 8222878559009141221, guid: 06cacfd2efea19943a3453c176e61204, type: 3}
       propertyPath: m_Color.r
-      value: 0.9716981
+      value: 0.9622642
+      objectReference: {fileID: 0}
+    - target: {fileID: 8222878559009141221, guid: 06cacfd2efea19943a3453c176e61204, type: 3}
+      propertyPath: m_Intensity
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8222878559516807154, guid: 06cacfd2efea19943a3453c176e61204, type: 3}
       propertyPath: m_IsActive
@@ -3035,15 +3137,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8222878560213899986, guid: 06cacfd2efea19943a3453c176e61204, type: 3}
       propertyPath: m_Color.b
-      value: 0.53626734
+      value: 0.6868548
       objectReference: {fileID: 0}
     - target: {fileID: 8222878560213899986, guid: 06cacfd2efea19943a3453c176e61204, type: 3}
       propertyPath: m_Color.g
-      value: 0.7428586
+      value: 0.83210796
       objectReference: {fileID: 0}
     - target: {fileID: 8222878560213899986, guid: 06cacfd2efea19943a3453c176e61204, type: 3}
       propertyPath: m_Color.r
-      value: 0.9716981
+      value: 0.990566
+      objectReference: {fileID: 0}
+    - target: {fileID: 8222878560213899986, guid: 06cacfd2efea19943a3453c176e61204, type: 3}
+      propertyPath: m_Intensity
+      value: 1.3
       objectReference: {fileID: 0}
     - target: {fileID: 8222878560277879510, guid: 06cacfd2efea19943a3453c176e61204, type: 3}
       propertyPath: m_IsActive
@@ -3063,7 +3169,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8222878560552780225, guid: 06cacfd2efea19943a3453c176e61204, type: 3}
       propertyPath: m_Intensity
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8222878560552780225, guid: 06cacfd2efea19943a3453c176e61204, type: 3}
       propertyPath: m_ShadowAngle
