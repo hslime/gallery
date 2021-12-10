@@ -3132,6 +3132,16 @@ PrefabInstance:
       propertyPath: m_Intensity
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 8222878559041712711, guid: 06cacfd2efea19943a3453c176e61204, type: 3}
+      propertyPath: Desc
+      value: "\uBB34\uC81C 37 \n\n\uC21C\uC9C0,\uC544\uAD50\uD3EC\uC218,\n\uC548\uB8CC\r\n143
+        x 76cm\r\n\r\n\uC7A5\uC815\uC2EC 2021"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8222878559477424930, guid: 06cacfd2efea19943a3453c176e61204, type: 3}
+      propertyPath: Desc
+      value: "\uBB34\uC81C 41 \n\n\uC21C\uC9C0,\uC544\uAD50\uD3EC\uC218,\n\uC548\uB8CC\r\n143
+        x 76cm\r\n\r\n\uC7A5\uC815\uC2EC 2021"
+      objectReference: {fileID: 0}
     - target: {fileID: 8222878559516807154, guid: 06cacfd2efea19943a3453c176e61204, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -3144,9 +3154,24 @@ PrefabInstance:
       propertyPath: m_AreaSize.x
       value: 11.86
       objectReference: {fileID: 0}
+    - target: {fileID: 8222878559850686051, guid: 06cacfd2efea19943a3453c176e61204, type: 3}
+      propertyPath: Desc
+      value: "\uBB34\uC81C 46 \n\n\uC21C\uC9C0,\uC544\uAD50\uD3EC\uC218,\n\uC548\uB8CC\r\n143
+        x 76cm\r\r\n\r\n\uC7A5\uC815\uC2EC 2021"
+      objectReference: {fileID: 0}
     - target: {fileID: 8222878559981148079, guid: 06cacfd2efea19943a3453c176e61204, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8222878559999670054, guid: 06cacfd2efea19943a3453c176e61204, type: 3}
+      propertyPath: Desc
+      value: "\uBB34\uC81C 45 \n\n\uC21C\uC9C0,\uC544\uAD50\uD3EC\uC218,\n\uC548\uB8CC\r\n143
+        x 76cm\r\n\r\n\uC7A5\uC815\uC2EC 2021"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8222878560167796874, guid: 06cacfd2efea19943a3453c176e61204, type: 3}
+      propertyPath: Desc
+      value: "\uBB34\uC81C 39 \n\n\uC21C\uC9C0,\uC544\uAD50\uD3EC\uC218,\n\uC548\uB8CC\r\n143
+        x 76cm\r\n\r\n\uC7A5\uC815\uC2EC 2021"
       objectReference: {fileID: 0}
     - target: {fileID: 8222878560213899986, guid: 06cacfd2efea19943a3453c176e61204, type: 3}
       propertyPath: m_Color.b
@@ -3168,6 +3193,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8222878560457713139, guid: 06cacfd2efea19943a3453c176e61204, type: 3}
+      propertyPath: Desc
+      value: "\uBB34\uC81C 44 \n\n\uC21C\uC9C0,\uC544\uAD50\uD3EC\uC218,\n\uC548\uB8CC\r\n143
+        x 76cm\r\n\r\n\uC7A5\uC815\uC2EC 2021"
+      objectReference: {fileID: 0}
     - target: {fileID: 8222878560552780225, guid: 06cacfd2efea19943a3453c176e61204, type: 3}
       propertyPath: m_Color.b
       value: 0.92096835
@@ -3188,9 +3218,29 @@ PrefabInstance:
       propertyPath: m_ShadowAngle
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8222878560568464523, guid: 06cacfd2efea19943a3453c176e61204, type: 3}
+      propertyPath: Desc
+      value: "\uBB34\uC81C 38 \n\n\uC21C\uC9C0,\uC544\uAD50\uD3EC\uC218,\n\uC548\uB8CC\r\n143
+        x 76cm\r\r\n\r\n\uC7A5\uC815\uC2EC 2021"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8222878560634403295, guid: 06cacfd2efea19943a3453c176e61204, type: 3}
+      propertyPath: Desc
+      value: "\uBB34\uC81C 43 \n\n\uC21C\uC9C0,\uC544\uAD50\uD3EC\uC218,\n\uC548\uB8CC\r\n\r143
+        x 76cm\r\n\r\n\uC7A5\uC815\uC2EC 2021"
+      objectReference: {fileID: 0}
     - target: {fileID: 8222878560712659616, guid: 06cacfd2efea19943a3453c176e61204, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8222878560757086100, guid: 06cacfd2efea19943a3453c176e61204, type: 3}
+      propertyPath: Desc
+      value: "\uBB34\uC81C 40 \n\n\uC21C\uC9C0,\uC544\uAD50\uD3EC\uC218,\n\uC548\uB8CC\r\n143
+        x 76cm\r\n\r\n\uC7A5\uC815\uC2EC 2021"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8222878560804950213, guid: 06cacfd2efea19943a3453c176e61204, type: 3}
+      propertyPath: Desc
+      value: "\uBB34\uC81C 42 \n\n\uC21C\uC9C0,\uC544\uAD50\uD3EC\uC218,\n\uC548\uB8CC\r\n143
+        x 76cm\r\r\n\r\n\uC7A5\uC815\uC2EC 2021"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06cacfd2efea19943a3453c176e61204, type: 3}
